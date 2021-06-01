@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*--基準、開始--*/
+body
+{
+	margin: 0;				/* スペース */
+	padding: 0;			/* 余白 */
+	font-size: 15px;		/* 基準・文字サイズ */
+	line-height: 2.2;	/* 行の高さ */
+  font-family: 'Shippori Mincho B1', serif; /* 文字フォント */
+  color: #444; /* 文字カラー */
+  text-align: center; /* 配置　*/
+	white-space: nowrap; /* 自動改行無効 */
+}
+a
+{
+  text-decoration: none; /* 文字装飾無し */
+  font-family: 'Montserrat', sans-serif; /* 文字フォント */
+  color: #000; /* 文字カラー */
+}
+h1
+{
+  font-size: 4em; /* 名前文字サイズ */
+  font-family: 'Montserrat', sans-serif; /* 名前文字フォント */
+  letter-spacing: 10px; /* 名前文字間隔 */
+}
+h2
+{
+	font-size: 1.3em; /* 文字サイズ */
+	font-family: 'Shippori Mincho B1', serif; /* 文字フォント */
+}
+h3
+{
+	font-size: 1.2em; /* 文字サイズ */
+}
+h4
+{
+	font-size: 1.1em; /* 文字サイズ */
+	display: none;
+}
+li
+{
+	list-style-type: none;
+}
+/*--基準、終了--*/
+
+/*--トップ、開始--*/
+#top
+{
+	margin: 300px auto;
+}
+#name
+{
+	color: #000;
+}
+/*--トップ、終了--*/
+
+/*--ワーク、開始--*/
+#wrapper
+{
+	background: #f0f0f0;
+	padding-bottom: 150px;
+}
+#works
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 900px;
+	margin: auto;
+	padding-top: 250px;
+}
+.work
+{
+	margin: auto;
+	padding-bottom: 70px;
+	width: 290px;
+	height: 400px;
+
+}
+.work img
+{
+	width: 200px;
+	border-width: thin;
+	border-style: solid;
+	background: #fff;
+}
+.work h2,.work p
+{
+	line-height: 1.5;
+	letter-spacing: 2px;
+}
+.work br
+{
+	display: none;
+}
+
+.slideshow
+{
+	overflow: hidden;
+	width: 200px;
+	margin: auto;
+}
+/*.slideshow img
+{
+	display: none;
+}*/
+
+
+/*--ワーク、終了--*/
+
+/*--プロフィール開始--*/
+#profile
+{
+	width: 320px;
+	margin: 200px auto;
+	white-space: normal;
+}
+#profile img
+{
+	width: 130px;
+	padding-bottom: 5px;
+}
+#profile h3
+{
+	padding-bottom: 20px;
+}
+#profile p
+{
+	text-align: left;
+}
+/*--プロフィール終了--*/
+
+/*--フッター開始--*/
+#contact
+{
+	background: #f0f0f0;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+}
+#contact ul
+{
+	display: flex;
+	grid-gap: 50px;
+	position: absolute;
+	right: 7%;
+}
+#contact a
+{
+	color: #bd1c1c;
+}
+/*--フッター終了--*/
+
+
+/* タブレット用css・1024px、開始 */
+@media screen and ( max-width:1024px ){
+/*--基準、開始--*/
+	body
+	{
+		font-size: 13px;
+	}
+/*--基準、終了--*/
+
+/*--トップ、開始--*/
+	#concept
+	{
+		white-space: normal;
+		text-align: justify;
+		width: 510px;
+		margin: auto;
+	}
+	#concept br
+	{
+		display:none;
+	}
+/*--トップ、終了--*/
+
+/*--ワーク、開始--*/
+	#works
+	{
+		padding-top: 150px;
+	}
+/*--ワーク、終了--*/
+
+/*--プロフィール開始--*/
+	#profile
+	{
+		white-space: normal;
+		width: 350px;
+		margin-top: 100px auto;
+	}
+
+/*--プロフィール終了--*/
+
+/*--フッター開始--*/
+  #contact ul
+	{
+		position: static;
+		justify-content: center;
+		grid-gap: 30px;
+	}
+/*--フッター終了--*/
+
+/* スマホ用css・540px、開始 */
+@media screen and ( max-width:540px ){
+/*--基準、開始--*/
+	body
+	{
+	  font-size: 13px; /* 文字サイズ */
+	}
+/*--基準、終了--*/
+
+
+/*--トップ、開始--*/
+	#name
+	{
+		line-height: 1.5;
+		font-size: 55%;
+	}
+	#concept
+	{
+		width: 250px;
+		margin-top: 30px;
+	}
+	#top
+	{
+		margin: 150px auto;
+	}
+/*--トップ、終了--*/
+
+/*--ワーク、開始--*/
+	#works
+	{
+		width: 400px;
+	}
+	.work
+	{
+		width: 200px;
+		height: 300px;
+
+	}
+	.work img
+	{
+		width: 150px;
+	}
+	.work h2,.work p
+	{
+
+	}
+	.work br
+	{
+		display: inline;
+	}
+/*--ワーク、終了--*/
+
+/*--プロフィール開始--*/
+	#profile
+	{
+		width: 315px;
+	}
+/*--プロフィール終了--*/
+
+}
